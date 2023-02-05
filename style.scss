@@ -16,11 +16,12 @@ $headColor: #cbd6f3;
             padding: 5px;
             margin-bottom: 10px;
             color: $headColor;
-            border-top: 1px solid orange;
+            border-top: 1px solid orange;       
         }
 
         h3:hover {
             color:orange;
+            transition-duration: 500ms;
         }
     }
 }
@@ -29,6 +30,7 @@ $headColor: #cbd6f3;
     font-size: 13px;
     color: orange;
     border-color: orange;
+    transition-duration: 300ms;
 }
 
 * {
@@ -44,6 +46,7 @@ header nav {
     #navContainer {
         border-bottom: 1px solid;
         background-color: #0a192f;
+        opacity: 0.7;
         #collapseBtn {
             color: $headColor;
 
@@ -54,6 +57,10 @@ header nav {
             }
         }
     }
+    #navContainer:hover{
+        opacity: 1;
+        transition-duration: 400ms;
+    }
 
     #navbarTogglerDemo02 {
         li {
@@ -63,10 +70,13 @@ header nav {
         a {
             color: $headColor;
             font-size: 13px;
+            transition: all;
         }
 
         a:hover {
             color: orange;
+            font-size: 13.4px;
+            transition-duration: 300ms;
         }
 
         #resumeBtn {
@@ -97,11 +107,13 @@ header nav {
 
     a {
         color: $headColor;
+        transition: all;
     }
 
     a:hover {
         font-size: 24px;
-        color: orange
+        color: orange;
+        transition-duration: 400ms;
     }
 }
 
@@ -118,6 +130,10 @@ header nav {
         h1 {
             color: orange;
         }
+        h1:hover{
+            font-size: 50px;
+            transition-duration: 400ms;
+        }
 
         h2 {
             color: $headColor;
@@ -129,10 +145,15 @@ header nav {
     }
 
     img {
-        height: 100%;
-        width: 100%;
+        width:38vh;
+        opacity: 0.6;
         border: #0a192f 10px solid;
         border-radius: 15px;
+    }
+    img:hover{
+        opacity: 1;
+        width: 44vh;
+        transition-duration: 400ms;
     }
 }
 
@@ -194,6 +215,7 @@ header nav {
         }
         h5:hover{
             font-size: 24px;
+            transition-duration: 400ms;
         }
 
         p {
