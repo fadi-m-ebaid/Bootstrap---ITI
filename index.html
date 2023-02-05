@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="fullPg">
+        <header>
+            <nav class="navbar navbar-expand-md ">
+                <div id="navContainer" class="container-fluid fixed-top">
+                    <a class="navbar-brand" href="index.html"><img
+                            src="Images\fadi-high-resolution-logo-color-on-transparent-background.png" width="70px"></a>
+                    <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation" id="collapseBtn">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ms-auto" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-md-0" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#aboutSec">Who am I</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#expSec">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#serSec">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#projSec">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contSec">Contact</a>
+                            </li>
+                            <li class="nav-item" id="resumeBtn">
+                                <a><button type="button" class="btn btn-outline-secondary">Resume</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <nav id="sideNav" class="nav flex-column" style="position:fixed; top:40%">
+            <a class="nav-link active" aria-current="page" href="https://github.com/fadi-m-ebaid"><i
+                    class="fa-brands fa-github"></i></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/fadi-micheal-08526619b/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a class="nav-link" href="https://twitter.com/home?lang=en"><i class="fa-brands fa-twitter"></i></a>
+            <a class="nav-link" href="https://www.facebook.com/fadi.micheal2/"><i class="fa-brands fa-facebook"></i></a>
+        </nav>
+
+        <div id="innerContent" class="container col-md-9">
+            <section id="aboutSec" class="container row row-cols-md-2 ">
+                <aside id="aboutTxt" class="col-md-7 me-auto">
+                    <p>Hi, my name is</p>
+                    <h1>Fadi Micheal</h1>
+                    <h2>A Full Stack Software Developer.</h2>
+                    <h5>I'm a software engineer specializing in building (and occasionally designing) exceptional
+                        digital experiences. Currently, I'm focused on building accessible, human-centered products.
+                    </h5>
+                </aside>
+                <div class="col-md-3 ms-auto">
+                    <img id="myimg" src="Images\Me(1).jpg" >
+                </div>
+            </section>
+
+            <section id="expSec" class="container">
+                <h3>Work Experience</h3>
+                <div class="accordion bg-transparent" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Accordion Item #4
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container" id="serSec">
+                <h3>Services</h3>
+                <div id="skill" class="row row-cols-2 row-cols-md-5 g-4">
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\logo-javascript.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\mongodb-icon-1.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">MongoDB</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\nodejs-1.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Node.Js</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\angular-icon-1.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Angular</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\react-2.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">React</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\css-3.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">CSS-3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\html-1.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\bootstrap-5-1.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">bootstrap</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img src="Images\c-1.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">C</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img id="pyth" src="Images\python-5.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Python</h5>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="projSec" class="container">
+                <h3>Projects</h3>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3800">
+                            <img src="Images\proj1.png" class="d-block w-100" alt="...">
+                            <div id="cap" class="carousel-caption d-none d-md-block">
+                                <a></a>
+                                <h5>An E-Commerce Site</h5></a>
+                                <p>JS - CSS-3 - HTML5</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3800">
+                            <img src="Images\proj2.png" class="d-block w-100" alt="...">
+                            <div id="cap" class="carousel-caption d-none d-md-block">
+                                <a></a>
+                                <h5>A Home Page for Music Academy</h5></a>
+                                <p>HTML - CSS</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3400">
+                            <img src="Images\proj3.png" class="d-block w-100" alt="...">
+                            <div id="cap" class="carousel-caption d-none d-md-block">
+                                <br>
+                                <a></a>
+                                <h5>A Responsive Home Page for a Restaurant </h5></a>
+                                <p>CSS-3 - HTML5 - Bootstrap - Sass</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3800">
+                            <img src="Images\proj4.png" class="d-block w-100" alt="...">
+                            <div id="cap" class="carousel-caption d-none d-md-block">
+                                <a></a>
+                                <h5>A Responsive CV Page</h5></a>
+                                <p>CSS-3 - HTML5 - Bootstrap - Sass</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="container" id="contSec">
+                <h3>Get In Touch</h3>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="First Name" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Last Name" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+
+                </div>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" placeholder="Mobile Number"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Leave a message</label>
+                </div>
+                <br>
+                <a href="mailto:fadi.micheal@hotmail.com"><button class="btn btn-outline-secondary" type="button"
+                        id="button-addon2" data-toggle="tooltip" data-placement="top"
+                        title="Email: fadi.micheal@hotmail.com">Send ME</button></a>
+                <a href="tel:01286495405"><button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                        data-toggle="tooltip" data-placement="top" title="Tel: 01286495405">Call
+                        ME</button></a>
+            </section>
+        </div>
+        <footer>
+            <p>Designed and Built by Fadi Micheal!</p>
+        </footer>
+    </div>
+    <script src="index.js">
+
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+</body>
+
+</html>
