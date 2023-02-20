@@ -163,6 +163,11 @@ header nav {
     #accordionFlushExample {
         border-radius: 10px;
     }
+    button:active{
+        background-color: #0a192f;
+        color: orange;
+        transition-duration: 200ms;
+    };
 }
 
 #serSec {
